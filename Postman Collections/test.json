@@ -1,0 +1,85 @@
+{
+	"info": {
+		"_postman_id": "20d27525-a30e-4734-9cde-adbd8c6c24b7",
+		"name": "employees",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "get particular emplyee",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "0d2ab350-2d5c-4113-a315-33d08808fb0d",
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				},
+				{
+					"listen": "prerequest",
+					"script": {
+						"id": "350d0a20-b655-40f0-8432-a8603cb9d68d",
+						"exec": [
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"_postman_id": "d3ff841e-2ec5-4b70-a305-cc5b3caa0fa6",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{url}}/api/v1/employee/1031?test=123",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"api",
+						"v1",
+						"employee",
+						"1031"
+					],
+					"query": [
+						{
+							"key": "test",
+							"value": "123"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "create post",
+			"_postman_id": "8bab1e8f-0cea-4064-a382-053f8e344e80",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"name\":\"Sohel\",\"salary\":\"1233\",\"age\":\"13\"}\t\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "{{url}}/api/v1/create"
+			},
+			"response": []
+		}
+	]
+}
