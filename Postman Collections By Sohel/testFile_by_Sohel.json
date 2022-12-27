@@ -26,7 +26,7 @@
 					}
 				}
 			],
-			"_postman_id": "d2633fc8-6b8f-4848-bc37-ec086ae83f9c",
+			"id": "d2633fc8-6b8f-4848-bc37-ec086ae83f9c",
 			"protocolProfileBehavior": {
 				"disableBodyPruning": true
 			},
@@ -41,10 +41,7 @@
 							"type": "file",
 							"src": "/D:/spring boot app for postman files/spring-boot-file-upload-download-rest-api-master/spring-boot-file-upload-download-rest-api-master/New Text Document.txt"
 						}
-					],
-					"options": {
-						"formdata": {}
-					}
+					]
 				},
 				"url": "http://localhost:8080/uploadFile"
 			},
@@ -52,7 +49,7 @@
 		},
 		{
 			"name": "upload files",
-			"_postman_id": "db1277ed-9099-4f99-a4d4-8828141c75c7",
+			"id": "db1277ed-9099-4f99-a4d4-8828141c75c7",
 			"protocolProfileBehavior": {
 				"disableBodyPruning": true
 			},
@@ -70,10 +67,7 @@
 								"/D:/spring boot app for postman files/spring-boot-file-upload-download-rest-api-master/spring-boot-file-upload-download-rest-api-master/test2file.txt"
 							]
 						}
-					],
-					"options": {
-						"formdata": {}
-					}
+					]
 				},
 				"url": "http://localhost:8080/uploadMultipleFiles"
 			},
@@ -88,14 +82,14 @@
 						"id": "679713a7-18a1-4d03-b2de-781a173073a0",
 						"exec": [
 							"pm.test(\"Status code is 200\", function () {\r",
-							"    pm.response.to.have.status(200);\r",
+							"    pm.response.to.have.status(201);\r",
 							"});"
 						],
 						"type": "text/javascript"
 					}
 				}
 			],
-			"_postman_id": "ffd54374-2a89-459e-a5cc-391a8d67d94b",
+			"id": "ffd54374-2a89-459e-a5cc-391a8d67d94b",
 			"protocolProfileBehavior": {
 				"disableBodyPruning": true
 			},
